@@ -10,7 +10,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>
     </RootNamespace>
-    <ProjectGuid>{7A60B1B6-11AC-AE2F-4BCD-68B6B7241902}</ProjectGuid>
+    <ProjectGuid>{E6D9884B-B616-7F6C-16F3-8F4E88B41212}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -69,35 +69,20 @@
     <Compile Include="Assets\Scripts\SimpleInteractable.cs" />
     <Compile Include="Assets\Scripts\SimpleInteractor.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
-    <Reference Include="com.unity.render-pipelines.core.Editor">
-      <HintPath>C:/temp/VersionTransfer/CSE490JHW3VersionTransfer/Library/ScriptAssemblies/com.unity.render-pipelines.core.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.render-pipelines.core.Runtime">
-      <HintPath>C:/temp/VersionTransfer/CSE490JHW3VersionTransfer/Library/ScriptAssemblies/com.unity.render-pipelines.core.Runtime.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/temp/VersionTransfer/CSE490JHW3VersionTransfer/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/Jialiang/Desktop/CSE490/CSE490JVRHW3Version/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/temp/VersionTransfer/CSE490JHW3VersionTransfer/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.render-pipelines.lightweight.Runtime">
-      <HintPath>C:/temp/VersionTransfer/CSE490JHW3VersionTransfer/Library/ScriptAssemblies/com.unity.render-pipelines.lightweight.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.render-pipelines.lightweight.Editor">
-      <HintPath>C:/temp/VersionTransfer/CSE490JHW3VersionTransfer/Library/ScriptAssemblies/com.unity.render-pipelines.lightweight.Editor.dll</HintPath>
+      <HintPath>C:/Users/Jialiang/Desktop/CSE490/CSE490JVRHW3Version/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/temp/VersionTransfer/CSE490JHW3VersionTransfer/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/Jialiang/Desktop/CSE490/CSE490JVRHW3Version/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
-      <HintPath>C:/temp/VersionTransfer/CSE490JHW3VersionTransfer/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+      <HintPath>C:/Users/Jialiang/Desktop/CSE490/CSE490JVRHW3Version/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/temp/VersionTransfer/CSE490JHW3VersionTransfer/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.render-pipelines.core.IncludePaths">
-      <HintPath>C:/temp/VersionTransfer/CSE490JHW3VersionTransfer/Library/ScriptAssemblies/com.unity.render-pipelines.core.IncludePaths.dll</HintPath>
+      <HintPath>C:/Users/Jialiang/Desktop/CSE490/CSE490JVRHW3Version/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -298,10 +283,10 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Analytics">
-      <HintPath>C:/Users/jl262/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
+      <HintPath>C:/Users/Jialiang/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.StandardEvents">
-      <HintPath>C:/Users/jl262/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/Jialiang/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>
