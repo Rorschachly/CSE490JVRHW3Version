@@ -10,7 +10,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>
     </RootNamespace>
-    <ProjectGuid>{DF1AAD36-BB20-7B77-C456-803FE3783E0E}</ProjectGuid>
+    <ProjectGuid>{B56B0502-B8D3-456C-8606-2C46DF66A5CC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -63,34 +63,40 @@
   <ItemGroup>
     <Compile Include="Assets\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" />
     <Reference Include="com.unity.render-pipelines.core.Editor">
-      <HintPath>C:/temp/VersionTransfer/CSE490JHW3VersionTransfer/Library/ScriptAssemblies/com.unity.render-pipelines.core.Editor.dll</HintPath>
+      <HintPath>C:/temp/VersionTransfer/CSE490JVRHW4Version/Library/ScriptAssemblies/com.unity.render-pipelines.core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.render-pipelines.core.Runtime">
-      <HintPath>C:/temp/VersionTransfer/CSE490JHW3VersionTransfer/Library/ScriptAssemblies/com.unity.render-pipelines.core.Runtime.dll</HintPath>
+      <HintPath>C:/temp/VersionTransfer/CSE490JVRHW4Version/Library/ScriptAssemblies/com.unity.render-pipelines.core.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/temp/VersionTransfer/CSE490JHW3VersionTransfer/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>C:/temp/VersionTransfer/CSE490JVRHW4Version/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/temp/VersionTransfer/CSE490JHW3VersionTransfer/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/temp/VersionTransfer/CSE490JVRHW4Version/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.render-pipelines.lightweight.Runtime">
-      <HintPath>C:/temp/VersionTransfer/CSE490JHW3VersionTransfer/Library/ScriptAssemblies/com.unity.render-pipelines.lightweight.Runtime.dll</HintPath>
+      <HintPath>C:/temp/VersionTransfer/CSE490JVRHW4Version/Library/ScriptAssemblies/com.unity.render-pipelines.lightweight.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.render-pipelines.lightweight.Editor">
-      <HintPath>C:/temp/VersionTransfer/CSE490JHW3VersionTransfer/Library/ScriptAssemblies/com.unity.render-pipelines.lightweight.Editor.dll</HintPath>
+      <HintPath>C:/temp/VersionTransfer/CSE490JVRHW4Version/Library/ScriptAssemblies/com.unity.render-pipelines.lightweight.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/temp/VersionTransfer/CSE490JHW3VersionTransfer/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/temp/VersionTransfer/CSE490JVRHW4Version/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.postprocessing.Editor">
+      <HintPath>C:/temp/VersionTransfer/CSE490JVRHW4Version/Library/ScriptAssemblies/com.unity.postprocessing.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.postprocessing.Runtime">
+      <HintPath>C:/temp/VersionTransfer/CSE490JVRHW4Version/Library/ScriptAssemblies/com.unity.postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
-      <HintPath>C:/temp/VersionTransfer/CSE490JHW3VersionTransfer/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+      <HintPath>C:/temp/VersionTransfer/CSE490JVRHW4Version/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/temp/VersionTransfer/CSE490JHW3VersionTransfer/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/temp/VersionTransfer/CSE490JVRHW4Version/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.render-pipelines.core.IncludePaths">
-      <HintPath>C:/temp/VersionTransfer/CSE490JHW3VersionTransfer/Library/ScriptAssemblies/com.unity.render-pipelines.core.IncludePaths.dll</HintPath>
+      <HintPath>C:/temp/VersionTransfer/CSE490JVRHW4Version/Library/ScriptAssemblies/com.unity.render-pipelines.core.IncludePaths.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -383,7 +389,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{7A60B1B6-11AC-AE2F-4BCD-68B6B7241902}</Project>
+      <Project>{136F1D22-A6E3-67C3-EC9F-BEA3337DD317}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
   </ItemGroup>

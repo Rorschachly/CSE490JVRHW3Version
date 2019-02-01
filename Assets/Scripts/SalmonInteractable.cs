@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.PostProcessing;
 
 public class SalmonInteractable : MonoBehaviour
 {
@@ -20,11 +21,20 @@ public class SalmonInteractable : MonoBehaviour
     private Texture2D TransparentTexture;
     private bool GazeSuccess = false;
     private bool moving = false;
+
+    private PostProcessVolume iv;
+    private Vignette vigChange;
+
+    protected float startValueofVig;
+
+    public float endValueofVig;
     // Start is called before the first frame update
     void Start()
     {
         salmonLocation = this.transform.position;
-
+        iv = GetComponent<PostProcessVolume>();
+        iv.profile.TryGetSettings(out vigChange);
+        startValueofVig = vigChange.intensity.value;
         // here is the code to draw the transparent texture.
         //int size = Screen.width * Screen.height;
         //TransparentTexture = new Texture2D(Screen.width, Screen.height);
@@ -35,6 +45,7 @@ public class SalmonInteractable : MonoBehaviour
         //}
         //TransparentTexture.SetPixels(colors);
         //TransparentTexture.Apply();
+        vigChange.active = false;
     }
 
     // Update is called once per frame
@@ -48,6 +59,8 @@ public class SalmonInteractable : MonoBehaviour
             {
                 moving = true;
                 TriggerMove();
+                vigChange.intensity.value = Mathf.Lerp(0, 5, 2);
+                Debug.Log(vigChange.intensity.value);
             } else
             {
                 moving = false;
