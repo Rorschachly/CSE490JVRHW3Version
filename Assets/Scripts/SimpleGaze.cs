@@ -12,7 +12,6 @@ public class SimpleGaze : MonoBehaviour {
 
     [SerializeField] LayerMask choosenLayers;
 
-    public Texture2D texture;
 
     // Update is called once per frame
     void Update () {

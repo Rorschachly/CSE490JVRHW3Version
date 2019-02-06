@@ -90,7 +90,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -280,7 +280,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 237223321}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.32, y: -2.9, z: -16.13}
+  m_LocalPosition: {x: -17.94, y: -2.9, z: -26.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1206658426}
@@ -747,7 +747,7 @@ MonoBehaviour:
   xrRig: {fileID: 237223321}
   lookAtTime: 2
   moveSpeed: 0.3
-  texture: {fileID: 0}
+  iv: {fileID: 128981781}
 --- !u!65 &1098624211
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -760,21 +760,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.22798145, y: 0.26113048, z: 0.7425064}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1098624212
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1098624206}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a318acb931dae29489a789eaca85ca5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  volume: {fileID: 128981781}
-  changeSpeed: 0.05
-  vignetteStart: 0
-  vignetteEnd: 2
 --- !u!1 &1206658423
 GameObject:
   m_ObjectHideFlags: 0
@@ -871,6 +856,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   stopNaNPropagation: 1
+  finalBlitToCameraTarget: 1
   antialiasingMode: 0
   temporalAntialiasing:
     jitterSpread: 0.75
@@ -947,7 +933,6 @@ MonoBehaviour:
   choosenLayers:
     serializedVersion: 2
     m_Bits: 512
-  texture: {fileID: 2800000, guid: 6332988d4e434224a9e1dccdc010b3b1, type: 3}
 --- !u!1001 &1997149005
 Prefab:
   m_ObjectHideFlags: 0

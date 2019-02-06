@@ -17,41 +17,28 @@ public class SalmonInteractable : MonoBehaviour
 
     public float moveSpeed = 0.3f;
 
-    public Texture2D texture;
-    private Texture2D TransparentTexture;
     private bool GazeSuccess = false;
     private bool moving = false;
 
-    private PostProcessVolume iv;
-    private Vignette vigChange;
+    public PostProcessVolume iv = null;
+    Vignette vigChange;
 
     protected float startValueofVig;
 
-    public float endValueofVig;
     // Start is called before the first frame update
     void Start()
     {
         salmonLocation = this.transform.position;
         iv = GetComponent<PostProcessVolume>();
         iv.profile.TryGetSettings(out vigChange);
-        startValueofVig = vigChange.intensity.value;
-        // here is the code to draw the transparent texture.
-        //int size = Screen.width * Screen.height;
-        //TransparentTexture = new Texture2D(Screen.width, Screen.height);
-        //Color[] colors = new Color[size];
-        //for(int i = 0; i < size; i++)
-        //{
-        //    colors[i] = Color.clear;
-        //}
-        //TransparentTexture.SetPixels(colors);
-        //TransparentTexture.Apply();
-        vigChange.active = false;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(xrRig.transform.position);
+        vigChange.intensity.value = 1.0f;
+        Debug.Log(vigChange.intensity.value);
         if (GazeSuccess)
         {
 
@@ -59,11 +46,11 @@ public class SalmonInteractable : MonoBehaviour
             {
                 moving = true;
                 TriggerMove();
-                vigChange.intensity.value = Mathf.Lerp(0, 5, 2);
-                Debug.Log(vigChange.intensity.value);
+                
             } else
             {
                 moving = false;
+                vigChange.intensity.value = 0f;
             }
 
         }
@@ -107,17 +94,4 @@ public class SalmonInteractable : MonoBehaviour
             distanceZ * Time.deltaTime * moveSpeed);
     }
 
-    //private void OnGUI()
-    //{
-       
-    //    if (moving)
-    //    {
-    //        GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), texture);
-    //    }
-    //    else
-    //    {
-    //        GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), TransparentTexture);
-    //    }
-        
-    //}
 }
