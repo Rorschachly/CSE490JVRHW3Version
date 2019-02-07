@@ -20,44 +20,67 @@ public class SalmonInteractable : MonoBehaviour
     private bool GazeSuccess = false;
     private bool moving = false;
 
-    public PostProcessVolume iv = null;
-    Vignette vigChange;
+    public PostProcessVolume volume;
+    Vignette vigChange = null;
 
     protected float startValueofVig;
+
+    public float vignetteSpeed = 0.05f;
 
     // Start is called before the first frame update
     void Start()
     {
         salmonLocation = this.transform.position;
-        iv = GetComponent<PostProcessVolume>();
-        iv.profile.TryGetSettings(out vigChange);
+        volume.profile.TryGetSettings(out vigChange);
         
     }
 
     // Update is called once per frame
     void Update()
     {
-        vigChange.intensity.value = 1.0f;
-        Debug.Log(vigChange.intensity.value);
+        
         if (GazeSuccess)
         {
 
-            if (Vector3.Distance(xrRig.transform.position, salmonLocation) > 0.5f)
+            if (Vector3.Distance(xrRig.transform.position, salmonLocation) > 10.0f)
             {
                 moving = true;
                 TriggerMove();
-                
+                if (vigChange.intensity.value > 1.0f)
+                {
+                    vigChange.intensity.value = 1;
+                }
             } else
             {
+                vigChange.intensity.value = 0f;  // reset the vignette
                 moving = false;
-                vigChange.intensity.value = 0f;
             }
 
+        } else
+        {
+            if (moving)
+            {
+                if (Vector3.Distance(xrRig.transform.position, salmonLocation) > 10.0f)
+                {
+                    moving = true;
+                    TriggerMove();
+                    if (vigChange.intensity.value > 1.0f)
+                    {
+                        vigChange.intensity.value = 1;
+                    }
+                }
+            } else
+            {
+                vigChange.intensity.value = 0f;  // reset the vignette
+                moving = false;
+            }
         }
         if (!moving)
         {
+            vigChange.intensity.value = 0f;  // reset the vignette
             calculateDistance();
         }
+
 
     }
 
@@ -88,6 +111,7 @@ public class SalmonInteractable : MonoBehaviour
 
     private void TriggerMove()
     {
+        vigChange.intensity.value += vignetteSpeed;
         xrRig.transform.position -= new Vector3(
             distanceX * Time.deltaTime * moveSpeed,
             distanceY * Time.deltaTime * moveSpeed,

@@ -62,7 +62,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\IncreaseVignette.cs" />
-    <Compile Include="Assets\Scripts\Locomotion.cs" />
     <Compile Include="Assets\Scripts\Rotator.cs" />
     <Compile Include="Assets\Scripts\SalmonInteractable.cs" />
     <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
